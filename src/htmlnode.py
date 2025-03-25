@@ -43,7 +43,28 @@ class LeafNode(HTMLNode):
                 props_html = self.props_to_html()
             return f"<{self.tag}{props_html}>{self.value}</{self.tag}>"
 
-def test_leaf_to_html_p(self):
-    node = LeafNode("p", "Hello, world!")
-    self.assertEqual(node.to_html(), "<p>Hello, world!</p>")
+# parent node is any other HTML node that is not a leaf node
+class ParentNode(HTMLNode):
+    def __init__(self, tag, children, props=None):
+        super().__init__(tag, None, children, props)
+    
+    def to_html(self):
+        if not self.tag:
+            raise ValueError("Tag cannot be None")
+        if self.children is None:
+            raise ValueError("Children cannot be None")
+        # opening tag
+        html = f"<{self.tag}"
+        # if properties exist, add them
+        if self.props:
+            for prop, value in self.props.items():
+                html += f' {prop}="{value}"'
+        # close opening tag
+        html += ">"
+        # add children (recursion)
+        for child in self.children:
+            html += child.to_html()
+        # add closing tag
+        html += f"</{self.tag}>"
+        return html
 
