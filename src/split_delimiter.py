@@ -10,7 +10,6 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
             # for TEXT nodes we need to process the text content
             text = node.text
             # process the text and add resulting nodes to result_list
-            # 
             process_text(text, delimiter, text_type, result_list)
     return result_list
 
