@@ -15,7 +15,7 @@ def block_to_block_type(block):
         if len(parts) > 1 and all(char == '#' for char in parts[0]) and 1 <= len(parts[0]) <= 6:
             return BlockType.HEADING
     # code
-    elif block.startswith("```") and block.endswith("```"):
+    elif block.strip().startswith("```") and block.strip().endswith("```"):
         return BlockType.CODE
     # quote
     elif all(line.startswith(">") for line in block.split('\n') if line.strip()):
