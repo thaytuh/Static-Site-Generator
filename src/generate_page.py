@@ -10,10 +10,10 @@ def generate_page(from_path, template_path, dest_path):
     template_file = get_file_from_source_path(template_path)
     markdown_as_html = markdown_to_html_node(markdown_file).to_html()
     title = extract_title(markdown_file)
-    template_file.replace("{{ Title }}", title)
-    template_file.replace("{{ Content }}", markdown_as_html)
+    index_with_title = template_file.replace("{{ Title }}", title)
+    final_index_html = index_with_title.replace("{{ Content }}", markdown_as_html)
     create_directory(dest_path)
-    create_html_file(dest_path, markdown_as_html)
+    create_html_file(dest_path, final_index_html)
 
 def has_file_type(directory, extension):
     file_list = []
