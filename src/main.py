@@ -11,9 +11,9 @@ else:
     
 
 def main():
-    clear_directory("./public")
-    copy_dir("./static", "./public")
-    generate_pages_recursive("./content/", "./template.html", "./public/", basepath)
+    clear_directory("./docs")
+    copy_dir("./static", "./docs")
+    generate_pages_recursive("./content/", "./template.html", "./docs/", basepath)
 
 
     
