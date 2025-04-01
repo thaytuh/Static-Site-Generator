@@ -193,3 +193,64 @@ return "**This should not be bold**"
             html,
             "<div><pre><code>def example():\n# This is an inline comment\nreturn \"**This should not be bold**\"</code></pre></div>"
         )
+    
+    def test_nested_in_blockquote(self):
+        md = """
+> This is a **bold** blockquote with:
+> - A list item
+> - Another list item
+"""
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(
+            html,
+            "<div><blockquote>This is a <b>bold</b> blockquote with: - A list item - Another list item</blockquote></div>"
+        )
+    
+    def test_multiple_empty_lines(self):
+        md = """
+This is the first paragraph.
+
+
+This is the second paragraph with extra empty space between blocks.
+"""
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(
+            html,
+            "<div><p>This is the first paragraph.</p><p>This is the second paragraph with extra empty space between blocks.</p></div>"
+        )
+    
+    def test_formatted_list_items(self):
+        md = """
+- This is a **bold** item
+- This contains _italic_ text
+"""
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(
+            html,
+            "<div><ul><li>This is a <b>bold</b> item</li><li>This contains <i>italic</i> text</li></ul></div>"
+        )
+    
+    def test_links(self):
+        md = """
+This is a link to [Boot.dev](https://boot.dev).
+"""
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(
+            html,
+            "<div><p>This is a link to <a href=\"https://boot.dev\">Boot.dev</a>.</p></div>"
+        )
+    
+    def test_special_characters(self):
+        md = """
+This <text> & that > text with **bold**
+"""
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(
+            html,
+            "<div><p>This <text> & that > text with <b>bold</b></p></div>"
+        )
