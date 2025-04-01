@@ -15,13 +15,6 @@ def generate_page(from_path, template_path, dest_path):
     create_directory(dest_path)
     create_html_file(dest_path, final_index_html)
 
-def has_file_type(directory, extension):
-    file_list = []
-    path = Path(directory)
-    md_files = path.glob(extension)
-    for file in md_files:
-        file_list.append(file)
-    return file_list
 
 def get_file_from_source_path(from_path):
     try:
