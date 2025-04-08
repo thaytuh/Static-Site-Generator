@@ -2,8 +2,6 @@
 
 [< Back Home](/)
 
-Give me a call anytime to chat about Tolkien!
+The best way to get in contact with me would be my [LinkedIn](https://www.linkedin.com/in/thaytuh).
 
-`555-555-5555`
-
-**"Váya márië."**
+You can also check out what I'm up to on my [GitHub](https://github.com/thaytuh).
