@@ -1,6 +1,6 @@
 body {
-    background-color: #1f1c25;
-    color: #f0e6d1;
+    background-color: #303446;
+    color: #c6d0f5;
     font-family: "Luminari", "Georgia", serif;
     line-height: 1.7;
     margin: 0;
@@ -20,7 +20,7 @@ body {
   h4,
   h5,
   h6 {
-    color: #dda15e;
+    color: #a5adce;
     margin-top: 24px;
     margin-bottom: 16px;
     text-shadow: 2px 2px 4px #000;
@@ -45,14 +45,14 @@ body {
   }
   
   a {
-    color: #e0a96d;
+    color: #8caaee;
     text-decoration: none;
-    border-bottom: 2px solid #e0a96d;
+    border-bottom: 2px solid #8caaee;
   }
   
   a:hover {
-    color: #f4a261;
-    border-color: #f4a261;
+    color: #7088be;
+    border-color: #7088be;
   }
   
   ul,
@@ -61,11 +61,11 @@ body {
   }
   
   code {
-    background-color: #3c3c42;
+    background-color: #1e1e2e;
     border-radius: 6px;
-    color: #e9c46a;
+    color: #cdd6f4;
     padding: 0.4em 0.6em;
-    font-family: "Courier New", monospace;
+    font-family: "JetBrains Mono", monospace;
   }
   
   pre code {
@@ -73,7 +73,7 @@ body {
   }
   
   pre {
-    background-color: #3c3c42;
+    background-color: #1e1e2e;
     border-radius: 6px;
     padding: 1em;
     overflow: auto;
@@ -81,8 +81,8 @@ body {
   }
   
   blockquote {
-    background-color: #2e2c35;
-    border-left: 4px solid #8d99ae;
+    background-color: #232634;
+    border-left: 4px solid #e6e9ef;
     padding-left: 2em;
     margin-left: 0;
     padding-top: 0.5em;
@@ -96,7 +96,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
-    border: 3px solid #3c3c42;
+    border: 3px solid #737994;
     box-shadow: 3px 3px 6px #000;
   }
   
