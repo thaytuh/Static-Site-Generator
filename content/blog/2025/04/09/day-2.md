@@ -1,0 +1,19 @@
+# Day 2 2025-04-09
+
+I can't guarantee this consistency will keep up, but I'm trying my best for now. Today has been a bit slower but I think there's been some fun advancements I'd like to share.
+
+## Todo: Todo
+
+I attempted to make my own todo app using python and a sqlite database, but couldn't figure out SQLAlchemy, so I turned to a Youtube tutorial (I swear I won't get stuck in tutorial hell) and it went quite well. I went through the tutorial as normal, had to some troubleshooting on my own, and modified the HTML to look a bit better when I was done with the tutorial. I don't have any extra plans for it right now, because the last thing the software world needs is another todo app, but it was fun to make and helped me understand some concepts I was struggling with.
+
+## greener grasses (hopefully)
+
+All my life I've been a Windows user. I've dabbled in different Linux distros over the last few years, but never fully replaced Windows as my daily driver. Until today.
+
+I ordered a Macbook.
+
+More specifically, a refurbished M1 Macbook Pro with 32GB of RAM and a 512GB SSD. I've been thinking about doing this for a while now, but never fully got around to it as I was scared to finally just make that leap. But after watching hours of videos and reading line after line of Reddit posts, I finally caved. My plan is to replace my current Windows laptop, that I've had for 4 years now, with the Macbook. I will still be using Windows on my work computer (obviously) and on my home PC, as I primarily use that for gaming, so it won't be a full replacement. I'm excited to learn a new OS and discover all the advantages and shortcomings that come with the territory of MacOS, but mainly I'm excited to have a nicer laptop. The laptop I have now isn't *bad* by any means, don't get me wrong, but it's definitely showing signs of use. The bottom case has a multiple of cracks, the rubber feet are peeling off and have now been stretched to the point where I can no longer just super glue them back on in the original way (the feet are more long bars of rubber that run along the bottom of the laptop. oh HP, the way you are), and the hardware just isn't up to the spec it used to be. Now, granted, the hardware was not really top of the line when I first got the computer, but it served its duty. I won't fully get rid of it, but I think it will primarily sit at home and act as a secondary gaming station if my girlfriend wants to play something with me that her laptop can't handle (my laptop is a gaming laptop, although it has a 3050 Ti laptop GPU, so it's not the shiniest gem in the shop). All in all, I'm excited for this new journey into the **Cult of Apple** and look forward to this new experience. The Macbook should get here maybe tomorrow or Friday, so I'll make sure to write about it as soon as I get my grubby little mitts on it.
+
+I think I'll end this one with another quote of the day, staying on brand with today's topic:
+
+> "The only way to do great work is to love what you do." - Steve Jobs
